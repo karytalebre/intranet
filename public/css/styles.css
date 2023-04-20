@@ -1,0 +1,145 @@
+
+/* CONTAINER */
+.container2 {
+    min-height: 60vh;
+    padding: 2em;
+    
+}
+
+
+
+.message{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px;
+    background-color: #82ceec9c;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9999;
+
+
+}
+
+
+
+/* LOGIN e REGISTER */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-image, .auth-form {
+    flex-basis: 20%;
+   
+
+}
+
+.login-text{
+    color: #fff;
+  
+
+}
+
+.login-text p{
+    text-decoration: none;
+}
+
+.auth-image {
+    text-align: center;
+    
+}
+
+.auth-form {
+    padding: 0 20px;
+}
+
+
+.auth-container h2{
+    margin-bottom: 1em;
+    color: #fff;
+    border-left: 4px solid #3389e4;
+    padding: .3em;
+    padding: .3em;
+    width: 100px;
+    
+
+}
+
+
+.form-control2{
+    width: 500px;
+}
+
+.auth-container a{
+    color: #3389e4;
+    
+
+}
+
+
+.form-control2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+   
+    
+}
+
+.form-control2 label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #fff;
+   
+
+}
+
+.form-control2 input, 
+.form-control2 textarea{
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #3389e4;
+}
+
+.contlogin{
+    color: #fff;
+}
+
+
+.contlogin p{
+    padding: 30px;
+  
+}
+
+.buton2 input{
+
+    background-color: transparent;
+    color: #3389e4;
+    border: 2px solid #3389e4;
+    padding: 0.60em 1.6em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+
+}
+
+.buton2 input:hover{
+    background-color: #3389e4;
+    color: #fff;
+}
+
+
+
+
+
+

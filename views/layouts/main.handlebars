@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal da Gente</title>
+	
+	
+	<script src="toughts/home.handlebars"></script>
+	<script src="layouts/main.handlebars"></script>
+	<script src="scripts/script.js"></script>
+
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+     <link rel="apple-touch-icon" sizes="180x180" href="img/Logopag/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/Logopag/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/Logopag/favicon-16x16.png">
+		
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+ 	 <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/stylehome.css">
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	
+    <nav id="navbar">
+    
+        <div class="navigation-wrap bg-light start-header start-style">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md navbar-light">
+					
+						<a class="navbar-brand" href="/" target="_blank"><img src="img/img-barramenu/logo-portal.png" alt=""></a>
+						
+							<a class="nav-logo" href="#"> <p>Portal da Gente</p></a>
+						
+						{{#if session.userid}}
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active" >
+									
+									<a  class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">  Menu</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Perfil</a>
+										<a class="dropdown-item" href="#">Treinamento</a>
+										<a class="dropdown-item" href="#">Blog</a>
+										<a class="dropdown-item" href="#">Jogos</a>
+									</div>
+									
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Treinamentos</a>
+								</li>
+								
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Calendário</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Férias</a>
+										<a class="dropdown-item" href="#">Aniversarios</a>
+										<a class="dropdown-item" href="#">Eventos</a>
+										
+									</div>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#"></a>
+								</li>
+
+							
+								
+	
+			
+			<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+				<a href="/logout" class="nav-link" href="#"><i class="bi bi-person-plus-fill"></i> Sair </a>
+			</li>
+	
+
+	{{else}}
+
+	<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+				<a href="/login" class="nav-link" href="#"><i class="bi bi-house-add-fill"></i> Login</a>
+			</li>
+
+		
+
+     {{/if}}	
+								 
+
+  
+							
+								
+												
+							
+							</ul>
+							
+								
+							  </button>
+							
+						</div>
+			
+					</nav>	
+						
+				</div>
+				
+			</div>
+		</div>
+
+					
+
+		
+	</div>
+
+
+			
+			
+						
+        </ul>
+		
+    </nav>
+
+	
+
+    <div class="container2">
+						<div id="message-template" type="text/x-handlebars-template">
+				{{#if messages.message}}
+					<div class="message" id="message-box">
+					{{messages.message}}
+					<span class="close" id="close-button">&times;</span>
+					</div>
+				{{/if}}
+				</div>
+
+
+
+        		 	{{{body}}}
+
+					
+	</div>
+
+	
+
+      <!--- RODAPÉ DO SITE -->
+
+
+	<footer>
+		
+		<div class="main-content">
+			<div class="img-rodape"><img src="img/img-ropade/LOGO-200X200.png" class="img-fluid" alt="..."></div>
+			
+			<div class="left box">
+				
+				
+				<h2> Sobre nós</h2>
+				<div class="content">
+					<p>Portal da Gente entregando entretenimento para você</p>
+						<h5>Missão: </h5>
+						<p>Entregar uma experiência de compra completa e ágil, com soluções eficientes que possam facilitar o dia a dia do vidraceiro e inspirar a ciração de ambientes acolhedores.</p>
+						<h5>Visão: </h5>
+						<p>Ser a primeira quando se pensa em vidros no Amazonas, desenvolvendo processos eficientes e eficazes para contribuir no desenvolvimento Amazonense.</p>
+						<h5>Valores: </h5>
+						<p> Transparência, honestidade e seriedade com os clientes;
+							Compromisso com a superação pessoal e da equipe;
+							Segurança, ética e respeito com todos.
+							Foco no resultado;
+							
+						</p>
+					
+					
+					
+					
+					<div class="social">
+						<a href="#"><span class="fab fa-facebook-f"></span></a>
+						<a href="#"><span class="fab fa-twitter"></span></a>
+						<a href="#"><span class="fab fa-instagram"></span></a>
+						<a href="#"><span class="fab fa-youtube"></span></a>
+					</div>
+				</div>
+			</div><!--left box-->
+			<div class="center box">
+				
+				<h2>Suporte</h2>
+				<div class="content">
+					<div class="place">
+						<span class="fas fa-map-marker"></span>
+						
+						<span class="text"><img src="img/img-ropade/safari.png"> Atendimento conforme horario de funcionamento da empresa </span>
+					</div>
+
+					<div class="phone">
+						<span class="fas fas fa-phone-alt"></span>
+						
+						<span class="text"> <img src="img/img-ropade/phone-alt.png"> 4218, 4228, 4244</span>
+					</div>
+
+					<div class="email">
+						<span class="fas fa-envelope"></span>
+						
+						
+						<span class="text"> <img src="img/img-ropade/envelope.png"> ti@portalvidros.com.br</span>
+						
+					</div>
+					<span class="text"> <img src="img/img-ropade/envelope.png"> ti2@portalvidros.com.br</span>
+				</div>
+			</div>
+			<div class="right box">
+				<h2>Ideias</h2>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<div class="text">Email *</div>
+							<input type="email" required>
+						</div>
+						<div class="msg">
+							<div class="text">Mensagem *</div>
+							<textarea rows="2" cols="25" required></textarea>
+						</div>
+						<div class="btn">
+							<button type="submit">Enviar mensagem</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!--main-content-->
+		<div class="bottom">
+			<div class="center">
+				<span class="credit"><a href="#">T.I PORTAL VIDROS</a></span>
+				<span class="far fa-copyright"> &copy; 2023 Todos os diteitos reservados</span>
+			</div>
+		</div>
+	</footer>
+
+
+<!--- FIM RODAPÉ DO SITE -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+
+<script src="/layouts/scripts/script.js"></script>
+
+</body>
+</html>
